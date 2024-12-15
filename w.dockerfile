@@ -13,3 +13,4 @@ RUN ["mvn","clean","install","-T","2C","-DskipTests=true"]
 
 FROM tomcat
 COPY --from=maven_war_builder /root/.m2/repository/xyz/mstef/w/0.4/w-0.4.war /usr/local/tomcat/webapps
+
